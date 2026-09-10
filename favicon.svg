@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 683 683">
+<svg id="_圖層_1" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128">
   <defs>
     <style>
       .cls-1 {
-        fill: #f2cf7d;
+        fill: #ebca7c;
         filter: url(#outer-glow-1);
       }
 
@@ -15,22 +15,18 @@
         fill: url(#_未命名漸層_12);
       }
     </style>
-    <radialGradient id="_未命名漸層_12" data-name="未命名漸層 12" cx="341.08" cy="341.08" fx="341.08" fy="341.08" r="132.94" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#f2cf7d" stop-opacity="0"/>
-      <stop offset="1" stop-color="#f2cf7d"/>
+    <radialGradient id="_未命名漸層_12" data-name="未命名漸層 12" cx="64" cy="64" fx="64" fy="64" r="50.02" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ebca7c" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ebca7c"/>
     </radialGradient>
     <filter id="outer-glow-1" filterUnits="userSpaceOnUse">
       <feOffset dx="0" dy="0"/>
       <feGaussianBlur result="blur" stdDeviation="56.69"/>
-      <feFlood flood-color="#f9dca2" flood-opacity="1"/>
+      <feFlood flood-color="#f4d8a0" flood-opacity="1"/>
       <feComposite in2="blur" operator="in"/>
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g id="Cover">
-    <g>
-      <circle class="cls-2" cx="341.08" cy="341.08" r="132.94"/>
-      <path class="cls-1" d="m341.08,511.16c-93.78,0-170.08-76.3-170.08-170.08s76.3-170.08,170.08-170.08,170.08,76.3,170.08,170.08-76.3,170.08-170.08,170.08Zm0-332.34c-89.47,0-162.26,72.79-162.26,162.26s72.79,162.26,162.26,162.26,162.26-72.79,162.26-162.26-72.79-162.26-162.26-162.26Z"/>
-    </g>
-  </g>
+  <circle class="cls-2" cx="64" cy="64" r="50.02"/>
+  <path class="cls-1" d="m64,128C28.71,128,0,99.29,0,64S28.71,0,64,0s64,28.71,64,64-28.71,64-64,64Zm0-125.06C30.33,2.94,2.94,30.33,2.94,64s27.39,61.06,61.06,61.06,61.06-27.39,61.06-61.06S97.67,2.94,64,2.94Z"/>
 </svg>
