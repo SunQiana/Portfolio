@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111715">
+  <meta name="description" content="孫謙 · Sun — Technical Artist Portfolio 2026">
+  <meta property="og:title" content="孫謙 · Sun — Technical Artist Portfolio">
+  <meta property="og:description" content="Technical Art · AIGC · Tools & Pipeline · Arts">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/full/page-01.webp">
+  <title>孫謙 · Sun — Technical Artist Portfolio</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/preview/page-01.webp" as="image" type="image/webp" media="(max-width: 700px)">
+  <link rel="preload" href="assets/full/page-01.webp" as="image" type="image/webp" media="(min-width: 701px)">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-bar" aria-label="Portfolio navigation">
+    <a class="identity" href="#page-01" aria-label="Back to top">
+      <strong>孫謙 · Sun</strong><span>Technical Artist</span>
+    </a>
+    <nav>
+      <span id="pageIndicator" class="page-indicator" aria-live="polite">01 / 23</span>
+      <a href="portfolio.pdf" target="_blank" rel="noopener">PDF</a>
+      <a href="#page-01">Top</a>
+    </nav>
+  </header>
+
+  <main id="portfolio" aria-label="Technical Artist portfolio pages">
+    <!-- Pages are intentionally image-based to preserve the original art direction exactly. -->
+  </main>
+
+  <dialog id="viewer" class="viewer" aria-label="Portfolio page viewer">
+    <div class="viewer-toolbar">
+      <span id="viewerLabel">Page 01</span>
+      <div class="viewer-actions">
+        <button id="zoomButton" type="button" aria-label="Toggle zoom">Zoom</button>
+        <button id="closeButton" type="button" aria-label="Close viewer">Close</button>
+      </div>
+    </div>
+    <div id="viewerCanvas" class="viewer-canvas">
+      <img id="viewerImage" alt="Expanded portfolio page">
+    </div>
+  </dialog>
+
+  <noscript>
+    <p class="noscript">JavaScript is disabled. You can still <a href="portfolio.pdf">open the PDF portfolio</a>.</p>
+  </noscript>
+  <script src="script.js" defer></script>
+</body>
+</html>

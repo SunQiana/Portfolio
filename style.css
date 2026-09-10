@@ -1,0 +1,165 @@
+:root {
+  color-scheme: dark;
+  --bg: #0d1211;
+  --bar: rgba(13, 18, 17, 0.88);
+  --text: #f2f1ed;
+  --muted: #a7ada9;
+  --line: rgba(255, 255, 255, 0.10);
+  --accent: #e9c46b;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: var(--bg); }
+body {
+  margin: 0;
+  min-width: 280px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.site-bar {
+  position: fixed;
+  z-index: 20;
+  inset: 0 0 auto 0;
+  height: 54px;
+  padding: max(0px, env(safe-area-inset-top)) max(18px, env(safe-area-inset-right)) 0 max(18px, env(safe-area-inset-left));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: var(--bar);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(14px) saturate(120%);
+  -webkit-backdrop-filter: blur(14px) saturate(120%);
+}
+
+.identity { display: flex; align-items: baseline; gap: 10px; white-space: nowrap; }
+.identity strong { font-size: 14px; font-weight: 650; letter-spacing: .02em; }
+.identity span { font-size: 11px; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
+nav { display: flex; align-items: center; gap: 18px; font-size: 12px; }
+nav a { color: var(--muted); transition: color .18s ease; }
+nav a:hover, nav a:focus-visible { color: var(--accent); }
+.page-indicator { color: var(--muted); font-variant-numeric: tabular-nums; }
+
+main {
+  width: min(1600px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 76px 0 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.portfolio-page {
+  margin: 0;
+  scroll-margin-top: 70px;
+  background: #202927;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.055);
+  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.26);
+}
+
+.portfolio-page button {
+  all: unset;
+  display: block;
+  width: 100%;
+  cursor: zoom-in;
+}
+
+.portfolio-page img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: #232d2a;
+}
+
+.viewer {
+  width: 100vw;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #080b0a;
+  color: var(--text);
+}
+.viewer::backdrop { background: rgba(0,0,0,.88); }
+.viewer-toolbar {
+  position: sticky;
+  z-index: 3;
+  top: 0;
+  height: 50px;
+  padding: 0 max(14px, env(safe-area-inset-right)) 0 max(14px, env(safe-area-inset-left));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(8, 11, 10, .92);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+}
+.viewer-toolbar span { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.viewer-actions { display: flex; gap: 8px; }
+.viewer button {
+  appearance: none;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(255,255,255,.04);
+  color: var(--text);
+  padding: 6px 10px;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+.viewer button:hover { border-color: rgba(233,196,107,.55); color: var(--accent); }
+.viewer-canvas {
+  height: calc(100dvh - 50px);
+  overflow: auto;
+  display: grid;
+  place-items: start center;
+  overscroll-behavior: contain;
+}
+.viewer-canvas img {
+  display: block;
+  width: min(100%, 1920px);
+  height: auto;
+  max-width: none;
+  transform-origin: top center;
+  transition: width .16s ease;
+}
+.viewer.is-zoomed .viewer-canvas img { width: 1920px; }
+
+.noscript { padding: 80px 20px; text-align: center; }
+.noscript a { color: var(--accent); text-decoration: underline; }
+
+@media (max-width: 700px) {
+  .site-bar {
+    height: 48px;
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+  }
+  .identity span { display: none; }
+  .identity strong { font-size: 13px; }
+  nav { gap: 14px; }
+  main {
+    width: 100%;
+    padding: 56px 0 10px;
+    gap: 7px;
+  }
+  .portfolio-page {
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+    scroll-margin-top: 54px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
