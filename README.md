@@ -1,4 +1,4 @@
-# Technical Artist Portfolio 2026
+# My Technical Artist Portfolio 2026
 
 A portfolio of selected works in Technical Art, AIGC, Tools & Pipeline, and 3D Art.
 
