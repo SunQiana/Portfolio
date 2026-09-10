@@ -29,8 +29,8 @@ for (let page = 1; page <= PAGE_COUNT; page++) {
   const img = document.createElement('img');
   img.src = `assets/full/page-${number}.webp`;
   img.alt = `Portfolio page ${page} of ${PAGE_COUNT}`;
-  img.width = 1920;
-  img.height = 1080;
+  img.width = 3840;
+  img.height = 2160;
   img.decoding = 'async';
   if (page === 1) {
     img.loading = 'eager';

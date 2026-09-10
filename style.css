@@ -132,7 +132,7 @@ main {
   transform-origin: top center;
   transition: width .16s ease;
 }
-.viewer.is-zoomed .viewer-canvas img { width: 1920px; }
+.viewer.is-zoomed .viewer-canvas img { width: 3840px; }
 
 .noscript { padding: 80px 20px; text-align: center; }
 .noscript a { color: var(--accent); text-decoration: underline; }
