@@ -14,7 +14,7 @@ A portfolio of selected works in Technical Art, AIGC, Tools & Pipeline, and 3D A
 
 ## Website
 
-[View Website](https://sunqiana.github.io/Portfolio_2026)
+[View Website](https://sunqiana.github.io/Portfolio)
 
 A PDF version is also available in this repository.
 
