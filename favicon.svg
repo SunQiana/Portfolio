@@ -1,5 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#202a27"/>
-  <circle cx="32" cy="32" r="20" fill="none" stroke="#e9c46b" stroke-width="3"/>
-  <text x="32" y="40" text-anchor="middle" font-family="Georgia,serif" font-size="25" fill="#e9c46b">S</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 683 683">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f2cf7d;
+        filter: url(#outer-glow-1);
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#_未命名漸層_12);
+      }
+    </style>
+    <radialGradient id="_未命名漸層_12" data-name="未命名漸層 12" cx="341.08" cy="341.08" fx="341.08" fy="341.08" r="132.94" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f2cf7d" stop-opacity="0"/>
+      <stop offset="1" stop-color="#f2cf7d"/>
+    </radialGradient>
+    <filter id="outer-glow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="56.69"/>
+      <feFlood flood-color="#f9dca2" flood-opacity="1"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Cover">
+    <g>
+      <circle class="cls-2" cx="341.08" cy="341.08" r="132.94"/>
+      <path class="cls-1" d="m341.08,511.16c-93.78,0-170.08-76.3-170.08-170.08s76.3-170.08,170.08-170.08,170.08,76.3,170.08,170.08-76.3,170.08-170.08,170.08Zm0-332.34c-89.47,0-162.26,72.79-162.26,162.26s72.79,162.26,162.26,162.26,162.26-72.79,162.26-162.26-72.79-162.26-162.26-162.26Z"/>
+    </g>
+  </g>
 </svg>
