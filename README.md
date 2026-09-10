@@ -16,7 +16,7 @@ A portfolio of selected works in Technical Art, AIGC, Tools & Pipeline, and 3D A
 
 This portfolio is hosted with GitHub Pages and built as a lightweight static website using HTML, CSS, and JavaScript.
 
-**Portfolio:** [View Website](https://YOUR-USERNAME.github.io)
+**Portfolio:** [View Website]([https://YOUR-USERNAME.github.io](https://sunqiana.github.io/Portfolio_2026/#page-01))
 
 A PDF version is also available in this repository.
 
